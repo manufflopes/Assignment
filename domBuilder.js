@@ -5,8 +5,8 @@ function header() {
     headerTag.innerHTML = `
             <nav>
                 <ul class="menu">
-                    <li><a href="/" class="${
-                        page == '/' ? 'active' : ''
+                    <li><a href="./index.html" class="${
+                        page == '/index' ? 'active' : ''
                     }">Home</a></li>
                     <li><a href="./grades.html" class="${
                         page == '/grades' ? 'active' : ''
