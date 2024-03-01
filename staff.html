@@ -13,8 +13,34 @@
         <title>Manuella Lopes</title>
     </head>
     <body>
-        <main></main>
+        <main class="main-weather">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-sort="name">
+                            <div>Name<span class="sort asc"></span></div>
+                        </th>
+                        <th data-sort="position">
+                            <div>Position<span class="sort asc"></span></div>
+                        </th>
+                        <th data-sort="start_date">
+                            <div>Office<span class="sort asc"></span></div>
+                        </th>
+                        <th data-sort="office">
+                            <div>Extension<span class="sort asc"></span></div>
+                        </th>
+                        <th data-sort="extension">
+                            <div>Start Date<span class="sort asc"></span></div>
+                        </th>
+                        <th data-sort="salary">
+                            <div>Salary<span class="sort asc"></span></div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="staff-table"></tbody>
+            </table>
+        </main>
         <script src="./domBuilder.js"></script>
-        <script src="./script.js"></script>
+        <script src="./staff.js"></script>
     </body>
 </html>

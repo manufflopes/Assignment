@@ -13,7 +13,31 @@
         <title>Manuella Lopes</title>
     </head>
     <body>
-        <main></main>
+        <main>
+            <form id="convert-scale">
+                <input
+                    class="degree-input"
+                    type="number"
+                    placeholder="Type the Fahrenheit degrees"
+                />
+                <button class="scale-button">Convert</button>
+                <div>
+                    <span>
+                        <input
+                            type="radio"
+                            name="scale"
+                            value="fc"
+                            checked
+                        />Fahrenheit to Celsius</span
+                    >
+                    <span
+                        ><input type="radio" name="scale" value="ck" />Celsius
+                        to Kelvin</span
+                    >
+                </div>
+            </form>
+            <p class="converted-degree"></p>
+        </main>
 
         <script src="./domBuilder.js"></script>
         <script src="./script.js"></script>

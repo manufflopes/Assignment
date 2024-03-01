@@ -1,10 +1,15 @@
 :root {
-    --yellow: #fab96b;
-    --orange: #f19474;
-    --guava: #ea777b;
-    --gray: #94919a;
+    --cement: #94919a;
+    --pinkly: #dabfffff;
+    --old-pink: #b08ea2ff;
+    --purple: #907ad6ff;
+    --violet: #4f518cff;
+    --wine: #2c2a4aff;
+    --blue: #7fdeffff;
     --green: #69a2a8;
 }
+
+/* CSS HEX */
 
 * {
     margin: 0;
@@ -15,7 +20,7 @@
 }
 
 body {
-    background: var(--guava);
+    background: var(--wine);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -43,6 +48,10 @@ li a {
     padding: 0 32px;
     color: white;
     font-weight: bold;
+}
+
+li a.active {
+    color: var(--purple);
 }
 
 ul li:not(:first-of-type)::before {
@@ -92,4 +101,106 @@ footer {
     color: whitesmoke;
     padding: 16px;
     text-align: center;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+}
+table td,
+table th {
+    border: 1px solid var(--cement);
+    color: white;
+}
+table tr:first-child th {
+    border-top: 0;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 0;
+}
+table thead tr th div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+table thead th,
+table thead td {
+    padding: 12px 8px;
+}
+
+table thead tr {
+    background-color: var(--cement);
+    color: #ffffff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sort {
+    background-image: url(./assets/up.svg);
+    height: 12px;
+    width: 12px;
+}
+
+.asc {
+    background-image: url(./assets/down.svg);
+    height: 12px;
+    width: 12px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: var(--green);
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.main-staff {
+    max-width: unset;
+}
+
+.grades-button,
+.scale-button {
+    background-color: var(--blue);
+    color: black;
+}
+
+#grade-form,
+#convert-scale {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.mark-input,
+.degree-input {
+    color: var(--wine);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.grade {
+    font-size: 36px;
+    text-align: center;
+}
+
+#convert-scale div {
+    display: flex;
+    gap: 2rem;
 }
