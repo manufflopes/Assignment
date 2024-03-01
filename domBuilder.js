@@ -1,21 +1,21 @@
 function header() {
     const currentPage = window.location.pathname
-
+    const [page] = currentPage.split('.')
     const headerTag = document.createElement('header')
     headerTag.innerHTML = `
             <nav>
                 <ul class="menu">
                     <li><a href="./" class="${
-                        currentPage.includes('/index') ? 'active' : ''
+                        page == '/' ? 'active' : ''
                     }">Home</a></li>
                     <li><a href="./grades.html" class="${
-                        currentPage.includes('/grades') ? 'active' : ''
+                        page == '/grades' ? 'active' : ''
                     }">Grades</a></li>
                     <li><a href="./staff.html" class="${
-                        currentPage.includes('/staff') ? 'active' : ''
+                        page == '/staff' ? 'active' : ''
                     }">Staff</a></li>
                     <li><a href="./weather.html" class="${
-                        currentPage.includes('/weather') ? 'active' : ''
+                        page == '/weather' ? 'active' : ''
                     }">Weather</a></li>
                 </ul>
             </nav>
